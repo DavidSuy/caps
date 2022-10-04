@@ -1,0 +1,23 @@
+{
+  "name": "caps",
+  "version": "1.0.0",
+  "description": "Code Academy Parcel Service",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidSuy/caps.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidSuy/caps/issues"
+  },
+  "homepage": "https://github.com/DavidSuy/caps#readme",
+  "dependencies": {
+    "jest": "^29.1.2"
+  }
+}
