@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = ['pickup', 'inTransit', 'delivered'];
+module.exports = ['pickup', 'in-transit', 'delivered'];
