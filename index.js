@@ -1,10 +1,8 @@
 'use strict';
-const events = require('./src/events/eventEmitter');
+// const events = require('./src/events/eventEmitter');
+const events = require('./src/events');
 
-// events.on('pick', )
-const vendor = require('./src/events/vendor');
-
-vendor({
+events.emit('pickup', {
   store: 'flowershop',
   orderId: 'asoenthuasoenthu',
   customer: 'David',
