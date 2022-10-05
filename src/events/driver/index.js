@@ -1,11 +1,12 @@
 'use strict';
-const events = require('../eventEmitter.js');
-// const hub = require('../HUB');
+const io = require('socket.io-client');
+const URL = process.env.SERVER_URL || 'http://localhost:3002';
+const handleDriver = require('./handleDriver');
 
-function handleDriver(payload) {
-  console.log('driver');
-  events.emit('in-transit', payload);
-  setTimeout(() => events.emit('delivered', payload), 3000);
-}
+console.log('hi');
+// const socket = io.connect(`${URL}/tracking`);
+const socket = io.connect(`${URL}/caps`);
 
-module.exports = handleDriver;
+socket.on('pickup', () => console.log('picked up'));
+// socket.emit('pickup', { text: 'asonetuhs' });
+// socket.on('pickup', handleDriver(socket));
